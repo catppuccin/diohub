@@ -74,7 +74,7 @@ task.build-md() {
 
   for k in "${!urls[@]}"; do
     local url="${urls[$k]}" name="${accent_name[$k]}"
-    printf -- '- **<a href="%s"><img alt="%s" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/%s.png" height="12" width="12" />%s</a>**\n' \
+    printf -- '- **<a href="%s"><img alt="%s" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/%s.png" height="12" width="12" />&nbsp;%s</a>**\n' \
       "$url" "${flavor^} $name" "${flavor}_${name,,}" "$name"
   done
 }
