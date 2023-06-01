@@ -59,7 +59,7 @@
       ```
       or [Click Me](https://theme.felix.diohub?format_ver=0&elementsOnColours=ffbac2de&accent=ff89b4fa&faded3=ff6c7086&faded2=ff7f849c&faded1=ff9399b2&baseElements=ffcdd6f4&secondary=ff181825&primary=ff1e1e2e).
 3. If it prompts you to select an app, choose DioHub.
-4. Once you're in DioHub, it'll prompt you to load the theme or not. Select "Confirm"
+4. Once you're in DioHub, it'll prompt you to load the theme or not. Select "Confirm".
 
 ## 💝 Thanks to
 
