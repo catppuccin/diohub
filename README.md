@@ -61,6 +61,11 @@
 3. If it prompts you to select an app, choose DioHub.
 4. Once you're in DioHub, it'll prompt you to load the theme or not. Select "Confirm".
 
+## 🙋 FAQ
+
+- Q: **_The link doesn't prompt you to select an app, how to fix it?_**\
+  A: Browsers doesn't automatically open the link to an app, instead it'll provide you an option to "Open in App". For Firefox Mobile, once you opened the link, tap the double dots on the right bottom screen, scroll until you find "Open in App" and select it.
+
 ## 💝 Thanks to
 
 - [UrNightmaree](https://github.com/UrNightmaree)
