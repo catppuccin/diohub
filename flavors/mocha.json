@@ -1,10 +1,25 @@
 {
-  "accent": "89b4fa",
-  "primary": "1e1e2e",
-  "secondary": "181825",
-  "baseElements": "cdd6f4",
-  "elementsOnColours": "bac2de",
-  "faded1": "9399b2",
-  "faded2": "7f849c",
-  "faded3": "6c7086"
+  "accent": [
+    ["Rosewater", "#f5e0dc"],
+    ["Flamingo", "#f2cdcd"],
+    ["Pink", "#f5c2e7"],
+    ["Mauve", "#cba6f7"],
+    ["Red", "#f38ba8"],
+    ["Maroon", "#eba0ac"],
+    ["Peach", "#fab387"],
+    ["Yellow", "#f9e2af"],
+    ["Green", "#a6e3a1"],
+    ["Teal", "#94e2d5"],
+    ["Sky", "#89dceb"],
+    ["Sapphire", "#74c7ec"],
+    ["Blue", "#89b4fa"],
+    ["Lavender", "#b4befe"]
+  ],
+  "primary": "#1e1e2e",
+  "secondary": "#181825",
+  "baseElements": "#cdd6f4",
+  "elementsOnColours": "#bac2de",
+  "faded1": "#9399b2",
+  "faded2": "#7f849c",
+  "faded3": "#6c7086"
 }
