@@ -57,7 +57,7 @@
 - **<a href="https://theme.felix.diohub?format_ver=0&elementsOnColours=ff5c5f77&accent=ff7287fd&faded3=ff9ca0b0&faded2=ff8c8fa1&faded1=ff7c7f93&baseElements=ff4c4f69&secondary=ffe6e9ef&primary=ffeff1f5"><img alt="Latte Lavender" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/latte_lavender.png" height="12" width="12" />&nbsp;Lavender</a>**
 </details>
 <details>
-<summary>🪴 Frappe</summary>
+<summary>🪴 Frappé</summary>
 
 - **<a href="https://theme.felix.diohub?format_ver=0&elementsOnColours=ffb5bfe2&accent=fff4dbd6&faded3=ff6c7086&faded2=ff7f849c&faded1=ff9399b2&baseElements=ffc6d0f5&secondary=ff292c3c&primary=ff303446"><img alt="Frappe Rosewater" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/frappe_rosewater.png" height="12" width="12" />&nbsp;Rosewater</a>**
 - **<a href="https://theme.felix.diohub?format_ver=0&elementsOnColours=ffb5bfe2&accent=fff0c6c6&faded3=ff6c7086&faded2=ff7f849c&faded1=ff9399b2&baseElements=ffc6d0f5&secondary=ff292c3c&primary=ff303446"><img alt="Frappe Flamingo" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/frappe_flamingo.png" height="12" width="12" />&nbsp;Flamingo</a>**
