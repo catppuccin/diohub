@@ -122,6 +122,7 @@
 ## 💝 Thanks to
 
 - [UrNightmaree](https://github.com/UrNightmaree)
+- [hyperupcall](https://github.com/hyperupcall) for [Bake](https://github.com/hyperupcall/bake)
 
 &nbsp;
 
