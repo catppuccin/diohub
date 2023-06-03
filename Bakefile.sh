@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
-#
 
 __ensure_cmd() {
   command -v "$1" >/dev/null 2>&1 ||
@@ -28,7 +27,9 @@ __build() {
   __ensure_cmd jq
 
   local flavor="$1"
-  [[ -z "$flavor" ]] && bake.die "\$1: Specify at least one flavor"
+  local accent_clr_index="$2"
+
+  bake.assert_not_empty flavor
 
   local -a parsed_json=()
   for json_k in $(jq --raw-output "keys[]" "flavors/$flavor.json"); do
@@ -38,15 +39,25 @@ __build() {
     parsed_json+=("$json_k:${json_v#'#'}")
   done
 
-  for i in $(jq --raw-output ".accent | keys[]" "flavors/$flavor.json"); do
-    local accent_v accent_k
-    accent_k="$(jq --raw-output ".accent[$i][0]" "flavors/$flavor.json")"
-    accent_v="$(jq --raw-output ".accent[$i][1]" "flavors/$flavor.json")"
+  if [[ -z "$accent_clr_index" ]]; then
+    for i in $(jq --raw-output ".accent | keys[]" "flavors/$flavor.json"); do
+      local accent_v accent_k
+      accent_k="$(jq --raw-output ".accent[$i][0]" "flavors/$flavor.json")"
+      accent_v="$(jq --raw-output ".accent[$i][1]" "flavors/$flavor.json")"
+
+      parsed_json+=("accent:${accent_v#'#'}")
+      printf "\x1b[1m%s\x1b[0m\n" "$accent_k"
+      __parse_to_url "${parsed_json[@]}"
+    done
+  else
+    local accent_k accent_v
+    accent_k="$(jq --raw-output ".accent[$accent_clr_index][0]" "flavors/$flavor.json")"
+    accent_v="$(jq --raw-output ".accent[$accent_clr_index][1]" "flavors/$flavor.json")"
 
     parsed_json+=("accent:${accent_v#'#'}")
     printf "\x1b[1m%s\x1b[0m\n" "$accent_k"
     __parse_to_url "${parsed_json[@]}"
-  done
+  fi
 }
 
 task.build-url() {
@@ -56,12 +67,13 @@ task.build-url() {
 
 task.build-md() {
   local flavor="$1"
-  [[ -z "$flavor" ]] && bake.die "\$1: Specify at least one flavor"
+  local accent_clr_index="$2"
+  bake.assert_not_empty flavor
 
   local -a accent_name=()
   local -a urls=()
   local i=0
-  for l in $(__build "$1"); do
+  for l in $(__build "$1" "$2"); do
     if (( ! i )); then
       : "$(sed -E $'s/\e\\[[0-9]m//g' <<< "$l")"
       accent_name+=("$_")
@@ -76,5 +88,14 @@ task.build-md() {
     local url="${urls[$k]}" name="${accent_name[$k]}"
     printf -- '- **<a href="%s"><img alt="%s" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/%s.png" height="12" width="12" />&nbsp;%s</a>**\n' \
       "$url" "${flavor^} $name" "${flavor}_${name,,}" "$name"
+  done
+}
+
+task.task() {
+  for t in "$@"; do
+    : "${t//\-/_}"
+    local -n TASK_ARGS="${_^^}_ARGS"
+    IFS=' ' read -ra t_args <<< "$TASK_ARGS"
+    "task.$t" "${t_args[@]}"
   done
 }
