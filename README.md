@@ -122,7 +122,7 @@
 ## 💝 Thanks to
 
 - [UrNightmaree](https://github.com/UrNightmaree)
-- [hyperupcall](https://github.com/hyperupcall) for [Bake](https://github.com/hyperupcall/bake)
+- [hyperupcall](https://github.com/hyperupcall)'s [bake](https://github.com/hyperupcall/bake) is subject to the terms of the Mozilla Public License, v. 2.0. You can obtain a copy of the MPL at https://www.mozilla.org/en-US/MPL/2.0/
 
 &nbsp;
 
