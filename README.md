@@ -130,7 +130,7 @@
 
 ## 💝 Thanks to
 
-- [UrNightmaree](https://github.com/UrNightmaree)
+- [komothecat](https://github.com/komothecat)
 
 &nbsp;
 
