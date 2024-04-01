@@ -40,6 +40,10 @@
 
 ## Usage
 
+> [!NOTE]
+>
+> As of current pre-release version `v1.0.0-dev.1`, this theme would not work for that version and beyond. Changes are currently made for this version will eventually be pushed to the upstream.
+
 1. Ensure [DioHub](https://github.com/NamanShergill/diohub) is installed.
 2. Open the link below:
 <details>
