@@ -1,3 +1,8 @@
+---
+whiskers:
+  version: "2.2.0"
+  filename: "README.md"
+---
 <h3 align="center">
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
 	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
@@ -46,10 +51,10 @@
 
 1. Ensure [DioHub](https://github.com/NamanShergill/diohub) is installed.
 2. Open the link below:
-- [🌻 Latte](https://theme.felix.diohub?format_ver=0&elementsOnColors=ff5c5f77&faded2=ff8c8fa1&green=ff40a02b&baseElements=ff6c6f85&faded3=ff7c7f93&secondary=ffdce0e8&primary=ffeff1f5&faded1=ff9ca0b0&red=ffd20f39)
-- [🪴 Frappé](https://theme.felix.diohub?format_ver=0&elementsOnColors=ffb5bfe2&faded2=ff838ba7&green=ffa6d189&baseElements=ffa5adce&faded3=ff949cbb&secondary=ff232634&primary=ff303446&faded1=ff737994&red=ffe78284)
-- [🌺 Macchiato](https://theme.felix.diohub?format_ver=0&elementsOnColors=ffb8c0e0&faded2=ff8087a2&green=ffa6da95&baseElements=ffa5adcb&faded3=ff939ab7&secondary=ff181926&primary=ff24273a&faded1=ff6e738d&red=ffed8796)
-- [🌿 Mocha](https://theme.felix.diohub?format_ver=0&elementsOnColors=ffbac2de&faded2=ff7f849c&green=ffa6e3a1&baseElements=ffa6adc8&faded3=ff9399b2&secondary=ff11111b&primary=ff1e1e2e&faded1=ff6c7086&red=fff38ba8)
+{%- for _, flavor in flavors %}
+{%- set palette = flavor.colors %}
+- [{{ flavor.emoji }} {{ flavor.name }}](https://theme.felix.diohub?format_ver=0&elementsOnColors=ff{{ palette.subtext1.hex }}&faded2=ff{{ palette.overlay1.hex }}&green=ff{{ palette.green.hex }}&baseElements=ff{{ palette.subtext0.hex }}&faded3=ff{{ palette.overlay2.hex }}&secondary=ff{{ palette.crust.hex }}&primary=ff{{ palette.base.hex }}&faded1=ff{{ palette.overlay0.hex }}&red=ff{{ palette.red.hex }})
+{%- endfor %}
 3. If it prompts you to select an app, choose DioHub.
 4. Once you're in DioHub, it'll prompt you to load the theme or not. Select "Confirm".
 
