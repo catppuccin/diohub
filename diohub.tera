@@ -1,0 +1,89 @@
+---
+whiskers:
+  version: "2.2.0"
+  filename: "README.md"
+---
+<h3 align="center">
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/logos/exports/1544x1544_circle.png" width="100" alt="Logo"/><br/>
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+	Catppuccin for <a href="https://github.com/NamanShergill/diohub">DioHub</a>
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/misc/transparent.png" height="30" width="0px"/>
+</h3>
+
+<p align="center">
+	<a href="https://github.com/UrNightmaree/catppuccin-diohub/stargazers"><img src="https://img.shields.io/github/stars/UrNightmaree/catppuccin-diohub?colorA=363a4f&colorB=b7bdf8&style=for-the-badge"></a>
+	<a href="https://github.com/UrNightmaree/catppuccin-diohub/issues"><img src="https://img.shields.io/github/issues/UrNightmaree/catppuccin-diohub?colorA=363a4f&colorB=f5a97f&style=for-the-badge"></a>
+	<a href="https://github.com/UrNightmaree/catppuccin-diohub/contributors"><img src="https://img.shields.io/github/contributors/UrNightmaree/catppuccin-diohub?colorA=363a4f&colorB=a6da95&style=for-the-badge"></a>
+</p>
+
+<p align="center">
+	<img src="./assets/preview.png"/>
+</p>
+
+## Previews
+
+<details>
+<summary>🌻 Latte</summary>
+
+<img src="./assets/latte.webp"/>
+</details>
+<details>
+<summary>🪴 Frappé</summary>
+
+<img src="./assets/frappe.webp"/>
+</details>
+<details>
+<summary>🌺 Macchiato</summary>
+
+<img src="./assets/macchiato.webp"/>
+</details>
+<details>
+<summary>🌿 Mocha</summary>
+
+<img src="./assets/mocha.webp"/>
+</details>
+
+## Usage
+
+> [!NOTE]
+>
+> As of current pre-release version `v1.0.0-dev.1`, this theme would not work for that version and beyond. Changes are currently made for this version will eventually be pushed to the upstream.
+
+1. Ensure [DioHub](https://github.com/NamanShergill/diohub) is installed.
+2. Open the link below:
+{%- for _, flavor in flavors %}
+{%- set palette = flavor.colors %}
+<details>
+<summary>{{ flavor.emoji }} {{ flavor.name }}</summary>
+{%- for _, color in palette %}
+{%- if color.accent %}
+<li><img alt="{{ flavor.name }} {{ color.name }}" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/{{ flavor.identifier }}_{{ color.identifier }}.png" height="12" weight="12"> <strong><a href="https://theme.felix.diohub?format_ver=0&faded2=ff{{ palette.overlay1.hex }}&red=ff{{ palette.red.hex }}&secondary=ff{{ palette.crust.hex }}&faded1=ff{{ palette.overlay0.hex }}&elementsOnColors=ff{{ palette.subtext1.hex }}&green=ff{{ palette.green.hex }}&baseElements=ff{{ palette.subtext0.hex }}&accent=ff{{ palette[color.identifier].hex }}&primary=ff{{ palette.base.hex }}&faded3=ff{{ palette.overlay2.hex }}">&nbsp;{{ color.name }}</a></strong></li>
+{%- endif %}
+{%- endfor %}
+</details>
+{%- endfor %}
+3. If it prompts you to select an app, choose DioHub.
+4. Once you're in DioHub, it'll prompt you to load the theme or not. Select "Confirm".
+
+## 🙋 FAQ
+
+- Q: **_The link doesn't prompt you to select an app, how to fix it?_**\
+  A: Browsers doesn't automatically open the link to an app, instead it'll provide you an option to "Open in App". For Firefox Mobile, once you opened the link, tap the double dots on the right bottom screen, scroll until you find "Open in App" and select it.
+
+## 💝 Thanks to
+
+- [Komo](https://github.com/cattokomo)
+
+&nbsp;
+
+<p align="center">
+	<img src="https://raw.githubusercontent.com/catppuccin/catppuccin/main/assets/footers/gray0_ctp_on_line.svg?sanitize=true" />
+</p>
+
+<p align="center">
+	Copyright &copy; 2021-present <a href="https://github.com/catppuccin" target="_blank">Catppuccin Org</a>
+</p>
+
+<p align="center">
+	<a href="https://github.com/catppuccin/catppuccin/blob/main/LICENSE"><img src="https://img.shields.io/static/v1.svg?style=for-the-badge&label=License&message=MIT&logoColor=d9e0ee&colorA=363a4f&colorB=b7bdf8"/></a>
+</p>
