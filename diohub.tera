@@ -53,7 +53,14 @@ whiskers:
 2. Open the link below:
 {%- for _, flavor in flavors %}
 {%- set palette = flavor.colors %}
-- [{{ flavor.emoji }} {{ flavor.name }}](https://theme.felix.diohub?format_ver=0&elementsOnColors=ff{{ palette.subtext1.hex }}&faded2=ff{{ palette.overlay1.hex }}&green=ff{{ palette.green.hex }}&baseElements=ff{{ palette.subtext0.hex }}&faded3=ff{{ palette.overlay2.hex }}&secondary=ff{{ palette.crust.hex }}&primary=ff{{ palette.base.hex }}&faded1=ff{{ palette.overlay0.hex }}&red=ff{{ palette.red.hex }})
+<details>
+<summary>{{ flavor.emoji }} {{ flavor.name }}</summary>
+{%- for _, color in palette %}
+{%- if color.accent %}
+- <img alt="{{ flavor.name }} {{ color.name }}" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/{{ flavor.identifier }}_{{ color.identifier }}.png" height="12" weight="12"> **<a href="https://theme.felix.diohub?format_ver=0&faded2=ff{{ palette.overlay1.hex }}&red=ff{{ palette.red.hex }}&secondary=ff{{ palette.crust.hex }}&faded1=ff{{ palette.overlay0.hex }}&elementsOnColors=ff{{ palette.subtext1.hex }}&green=ff{{ palette.green.hex }}&baseElements=ff{{ palette.subtext0.hex }}&accent=ff{{ palette[color.identifier].hex }}&primary=ff{{ palette.base.hex }}&faded3=ff{{ palette.overlay2.hex }}">&nbsp;{{ color.name }}</a>**
+{%- endif %}
+{%- endfor %}
+</details>
 {%- endfor %}
 3. If it prompts you to select an app, choose DioHub.
 4. Once you're in DioHub, it'll prompt you to load the theme or not. Select "Confirm".
