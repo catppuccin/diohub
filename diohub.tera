@@ -57,7 +57,7 @@ whiskers:
 <summary>{{ flavor.emoji }} {{ flavor.name }}</summary>
 {%- for _, color in palette %}
 {%- if color.accent %}
-- <img alt="{{ flavor.name }} {{ color.name }}" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/{{ flavor.identifier }}_{{ color.identifier }}.png" height="12" weight="12"> **<a href="https://theme.felix.diohub?format_ver=0&faded2=ff{{ palette.overlay1.hex }}&red=ff{{ palette.red.hex }}&secondary=ff{{ palette.crust.hex }}&faded1=ff{{ palette.overlay0.hex }}&elementsOnColors=ff{{ palette.subtext1.hex }}&green=ff{{ palette.green.hex }}&baseElements=ff{{ palette.subtext0.hex }}&accent=ff{{ palette[color.identifier].hex }}&primary=ff{{ palette.base.hex }}&faded3=ff{{ palette.overlay2.hex }}">&nbsp;{{ color.name }}</a>**
+<li><img alt="{{ flavor.name }} {{ color.name }}" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/{{ flavor.identifier }}_{{ color.identifier }}.png" height="12" weight="12"> <strong><a href="https://theme.felix.diohub?format_ver=0&faded2=ff{{ palette.overlay1.hex }}&red=ff{{ palette.red.hex }}&secondary=ff{{ palette.crust.hex }}&faded1=ff{{ palette.overlay0.hex }}&elementsOnColors=ff{{ palette.subtext1.hex }}&green=ff{{ palette.green.hex }}&baseElements=ff{{ palette.subtext0.hex }}&accent=ff{{ palette[color.identifier].hex }}&primary=ff{{ palette.base.hex }}&faded3=ff{{ palette.overlay2.hex }}">&nbsp;{{ color.name }}</a></strong></li>
 {%- endif %}
 {%- endfor %}
 </details>
