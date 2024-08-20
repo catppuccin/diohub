@@ -114,7 +114,8 @@
 <li><img alt="Mocha Blue" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/mocha_blue.png" height="12" weight="12"> <strong><a href="https://theme.felix.diohub?format_ver=0&faded2=ff7f849c&red=fff38ba8&secondary=ff11111b&faded1=ff6c7086&elementsOnColors=ffbac2de&green=ffa6e3a1&baseElements=ffa6adc8&accent=ff89b4fa&primary=ff1e1e2e&faded3=ff9399b2">&nbsp;Blue</a></strong></li>
 <li><img alt="Mocha Lavender" src="https://github.com/catppuccin/catppuccin/raw/main/assets/palette/circles/mocha_lavender.png" height="12" weight="12"> <strong><a href="https://theme.felix.diohub?format_ver=0&faded2=ff7f849c&red=fff38ba8&secondary=ff11111b&faded1=ff6c7086&elementsOnColors=ffbac2de&green=ffa6e3a1&baseElements=ffa6adc8&accent=ffb4befe&primary=ff1e1e2e&faded3=ff9399b2">&nbsp;Lavender</a></strong></li>
 </details>
-3. If it prompts you to select an app, choose DioHub.
+
+3. If it prompts you to select an app, choose DioHub.</br>
 4. Once you're in DioHub, it'll prompt you to load the theme or not. Select "Confirm".
 
 ## 🙋 FAQ
